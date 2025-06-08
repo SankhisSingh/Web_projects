@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       /* #greeen{
+            background: rebeccapurple;
+            color: blanchedalmond;
+        }
+        div{
+            background: #d5df87;
+        }
+        .red{
+            background: #4c9995;
+        }
+        div > p{
+            background: #c65abb;
+        }
+        div p {
+            background: #a0da59;
+        }
+        /*universal selctors*/
+       /* *{
+            margin: 0;
+            padding: 0;
+        }
+        a:visited{
+            background: #c3d55b;
+            c
+            color: #000;
+        }
+        a:active{
+            background: #de4343;
+        }
+        a:hover{
+            background: #4d3cba;
+        }
+        p:first-child{
+            background: #bb07b5;
+        }*/
+        /* div{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background: #2fb195;
+        }
+        .box2{
+            color: blueviolet;
+            padding: 110px;
+            margin: 155px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box ;
+            align-items: center;
+            
+        }
+        .box1{
+            color: #362fb1;
+            padding: 110px;
+            margin: 155px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box ;
+            align-items: center;
+            
+            
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            text-decoration: line-through;
+            color: #362fb1;
+            line-height: 1.8;
+            letter-spacing: px;
+        }*/
+        div > p{
+            background: #f4f12f;
+            color: black;
+            margin: 10px;
+            padding: 200px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline;
+            line-height: 1.8;
+        }
+        h1{
+            color: aqua;
+            margin: auto;
+
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+
+        }
+        .yellow{
+            color: #f4f12f;
+            margin: auto;
+
+        }
+        *{
+            margin: auto;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>hey this is about font family 
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, amet inventore, ratione quaerat,
+        ex provident voluptatum soluta ullam libero voluptate eos officiis facilis ut at ipsam quia vel consectetur est!
+    </p>
+    <div class="box box1"> I am a box </div>
+    <div class="box box2">hey what do you want to learn</div> -->
+    <!-- <h2>inline css</h2>
+    <h1 style="color: aqua;background: #000;"> hii this is my 15th lecture for learning web development</h1>
+    <h3 id="green">this is about internal css</h3>
+    <h1>CSS selectors</h1>
+    <div>
+        this is element selectors.
+        <p>this is child selectors</p> -->
+         <!-- <P> this is child selectors</P>
+
+    </div>
+    <div class="red">
+        clss div
+     <article>
+        <p>1st child</p>
+        <P> this is descendent  selectors</P>
+        </article>
+    </div>
+    <a href="https://google.com">Go to Google</a> --> 
+
+   <!-- <header>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>contact</li>
+            <li>log in</li>
+        </ul>
+    </nav>
+   </header>
+   <main>
+    <h1>hello this is about &lt;main &gt; &lt;/main &gt;&nbsp; which is part of semantic tag</h1>
+   </main>
+    <h1>My book mark</h1>
+    <p><h2>Primary Bookmarks</h2></p>
+    <p><a target="_blank" href="https://www.google.com">Open google</a></p>
+    <p><a target="_blank" href="https://facebook.com">Open facebook</a></p>
+    <img height="300" src="image.png" alt="train image">
+    <video height="150" width="100" src="1000089928.mp4" controls muted poster="image.png"></video>
+     <table>
+        <CAption> SANKHI SINGH</CAption>
+        <tr>
+            <th>
+                sankhi
+            </th>
+            <th rowspan="2">singh</th>
+            <th>class</th>
+        </tr>
+        <tr>
+            <td rowspan="2">2</td>
+            <td colspan="2">3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <table>
+  <th>
+     header contents 
+  </th>
+  <tfoot>
+     footer content 
+      </tfoot>
+  <tbody>
+     body content
+  </tbody>
+</table>
+<svg height="100" width="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green"></circle>
+</svg>
+
+<form action="post">
+    <div>
+    <label for="username">Enter your username</label>
+    <input type="text" name="username" placeholder="Enter your name">
+    </div>
+    <div>
+     <label for="password">Enter your password</label>
+    <input type="password" name="password" placeholder="Enter your password">
+    </div>
+    <div>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">male</label>
+    </div>
+    <div>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">female</label>
+    </div>
+    <div>
+    <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+    <label for="subscribe">subscribe please</label>
+    </div>
+    <div>
+        <label for="comment"> comment pls</label>
+        <br>
+        <textarea type="comment" name="comment" placeholder="comment here" id=""></textarea>
+    </div>
+    <div>
+        <label for="reset"></label>
+    <input type="reset" name="reset" id="reset" rows="4" col="200">
+    </div>
+    <select name="fruits" > 
+        <option value="apple"> Apple </option>
+        <option value="Mango"> Mango </option>
+        <option value="rasberry"> rasberry </option>
+
+    </select>
+    </form>
+
+    <ul type="square">
+        <li>
+            1
+        </li>
+       <li>2</li>
+    <li>3</li>
+    </ul>
+    <ol type="A">
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <footer>
+        <p>
+            hey my name is sankhi singh
+             </p>
+        <a href="https://google.com">Google</a>
+       <form action="post"></form>
+       <div>
+       <label for="username">Enter your name</label>
+        <input type="text" name="username" id="username" placeholder="usernamer">
+            </div>
+         <div>
+            <label for="city">city name</label>
+            <input type="text" name="city" placeholder="city" >
+         </div>
+         <div>
+            <label for="pincode">pincode</label>
+            <input type="number" name="pincode" id="pincode" placeholder="pincode">
+         </div>   
+         <div id="firstid" class="red">first</div>
+         <span id="2nd" class="red">second</span>
+         <h2>congratulations</h2></footer> -->
+         <div class="red">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rem nihil ratione excepturi,
+             quasi iusto vel beatae nesciunt vitae deleniti magni
+             sequi distinctio dolorem repudiandae consequatur laborum. Nihil, voluptate a?</p>
+         </div>
+         <h1 style="color: aquamarine;" class="red blue yellow"> this is about cascade property of CSS</h1>
+         <h1>inline &gt; id &gt; class &gt;</h1>
+        <script src="script.js"></script>
+
+</body>
+</html>
