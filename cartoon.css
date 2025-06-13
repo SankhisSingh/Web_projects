@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#dora-svg {
+  box-shadow: 0 4px 32px rgba(0,0,0,0.6);
+  border-radius: 18px;
+  background: transparent;
+  margin: 0 auto;
+  display: block;
+}
