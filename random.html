@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rand1 = Math.random();
+        let rand2 = Math.random();
+        let rand3 = Math.random();
+        let first, second, third;
+        //generate first word
+        if(rand1<0.33){
+            first=" Crazy";
+        }
+        else if(rand1 >= 0.33 && rand1<0.66){
+            first ="Amazing";
+        }
+        else{
+            first="Fire";
+        }
+        //generate second word
+        if(rand2<0.33){
+            second=" Monday";
+        }
+        else if(rand2 >= 0.33 && rand2<0.66){
+            second ="Tuesday";
+        }
+        else{
+            second="Sunday";
+        }
+//generate third word
+ if(rand3<0.33){
+            third=" January";
+        }
+        else if(rand3 >= 0.33 && rand3<0.66){
+            third ="February";
+        }
+        else{
+            third="March";
+        }
+        console.log(`${first} ${second} ${third}`);
+
+    </script>
+</body>
+</html>
