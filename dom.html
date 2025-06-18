@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <script>
+        document.title="DOM"
+        console.log(document.title)
+        let N = parseInt(inputChar);
+
+// Loop from 1 up to N (inclusive)
+for (let i = 1; i <= N; i++) {
+    // Check if the current number 'i' is greater than 5
+    if (i > 5) {
+        // If 'i' is greater than 5, skip to the next iteration of the loop
+        continue;
+    }
+    // If 'i' is not greater than 5 (i.e., it's 1, 2, 3, 4, or 5), calculate and print its square
+    let square = i * i;
+    console.log(square);
+}
+
+
+let N = parseInt(inputChar);
+
+// Initialize variables for the largest odd and largest even numbers
+let largestOdd;
+let largestEven;
+
+// Determine the largest odd and largest even numbers up to N
+if (N % 2 === 0) {
+    // If N is even
+    largestEven = N;
+    largestOdd = N - 1;
+} else {
+    // If N is odd
+    largestEven = N - 1;
+    largestOdd = N;
+}
+
+// Calculate the difference: largest even - largest odd
+let difference = largestEven - largestOdd;
+
+// Print the difference
+console.log(difference);
+let N = parseInt(inputChar); // If inputChar is "22", N will be 22
+
+// Initialize sum and product
+let sum_of_digits = 0;
+let product_of_digits = 1;
+
+// Use a temporary variable to work with the number without modifying N directly
+let temp_N = N;
+
+// Handle the special case for N = 0
+if (N === 0) {
+    sum_of_digits = 0;
+    product_of_digits = 0; // Product of digits for 0 is generally considered 0 in this context
+} else {
+    // Loop while the number is greater than 0
+    while (temp_N > 0) {
+        // Get the last digit using the modulo operator (%)
+        let digit = temp_N % 10;
+
+        // Add the digit to the sum
+        sum_of_digits += digit;
+
+        // Multiply the digit to the product
+        product_of_digits *= digit;
+
+        // Remove the last digit by integer division (Math.floor for accurate integer result)
+        temp_N = Math.floor(temp_N / 10);
+    }
+}
+
+// Print the sum and product on a single line with a space between them
+console.log(sum_of_digits + " " + product_of_digits);
+// Debugged array declarations and initializations
+let a = [1, 2, 3];
+let b = [4, 5, 6];
+let c = [7, 8, 9]; // Assuming this was meant to be a simple array of numbers
+
+// Correctly get the length of each array
+let lengthA = a.length;
+let lengthB = b.length;
+let lengthC = c.length;
+
+// Correctly print the summation of the lengths
+console.log(lengthA + lengthB + lengthC);
+const inputChar = prompt("Enter an integer:");
+
+// Parse the input string to an integer
+// `parseInt` handles conversion from string to integer.
+let number = parseInt(inputChar);
+
+// Check if the parsed number is a valid integer.
+// `isNaN` checks if the result of parseInt is Not-a-Number (NaN), which happens for invalid inputs.
+if (isNaN(number)) {
+    console.log("Invalid input. Please enter a valid integer.");
+} else {
+    // Implement the logic based on the problem statement:
+    // If the number is negative, print "NOT FOUND"
+    if (number < 0) {
+        console.log("NOT FOUND");
+    }
+    // Else (if the number is zero or positive), print the square root of that number
+    else {
+        // Calculate the square root using Math.sqrt()
+        let result = Math.sqrt(number);
+        console.log(result);
+    }
+}
+const inputChar = prompt("Enter a lowercase English alphabet character:");
+
+// Check if the user cancelled the prompt
+if (inputChar === null) {
+    console.log("Input cancelled.");
+} else {
+    // Convert the character to lowercase to ensure consistency
+    let char = inputChar.toLowerCase();
+
+    // Validate that the input is a single lowercase English alphabet character
+    if (char.length !== 1 || !/[a-z]/.test(char)) {
+        console.log("Invalid input. Please enter a single lowercase English alphabet character.");
+    } else {
+        // Use a switch statement to determine if it's a Vowel or Consonant
+        switch (char) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                console.log("Vowel");
+                break; // Exit the switch statement
+            default:
+                console.log("Consonant");
+                break; // Exit the switch statement
+        }
+    }
+}
+//Get input from the user
+//try:
+    number = float(input("Enter a number: "))
+//Check if the number is positive, negative, or zero using if-elif-else
+    if (number > 0)
+        print("The number is positive.")
+   // elif number < 0:
+        print("The number is negative.")
+    //else:
+        print("The number is zero.")
+
+//except ValueError:
+    print("Invalid input. Please enter a valid number.")
+    def is_prime_less_than_10(N):
+    """
+    Determines if a given integer N (less than 10) is a prime number.
+
+    Args:
+        N (int): An integer less than 10.
+
+    Returns:
+        str: "prime number" if N is prime, "non-prime number" otherwise.
+    """
+    # Prime numbers less than 10 are 2, 3, 5, 7
+    # Handle edge cases first
+    if N < 2:
+        return "non-prime number"
+    elif N == 2:
+        return "prime number"
+    elif N == 3:
+        return "prime number"
+    elif N == 5:
+        return "prime number"
+    elif N == 7:
+        return "prime number"
+    else:
+        # For N=4, 6, 8, 9, these are non-prime
+        return "non-prime number"
+
+//Get input from the user
+//try:
+  //  num = int(input())
+    // Ensure the input is less than 10 as per problem statement
+   // if// num >= 10:
+      //  print("Input must be an integer less than 10.")
+    ////else:
+      //  # Call the function and print the result
+      //  print(is_prime_less_than_10(num))
+//except ValueError:
+    print("Invalid input. Please enter an integer.")
+    </script>
+</body>
+</html>
