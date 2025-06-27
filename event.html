@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+.box{
+    display: flex;
+    height: 55px;
+    width: 72px;
+    align-items: center;
+    background-color: black;
+    color: antiquewhite;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">I am a box</div>
+    </div>
+    <button id="btn">change content</button>
+    <script>
+       let btn =document.getElementById("btn")  
+       btn.addEventListener("mousedown", ()=>{
+       alert("I was clicked") ;
+       document.querySelector(".box").innerHTML="<b> Yaayyyy I am clicked</b>"
+       });
+       console.log("Sankhi is hacker");
+       console.log("Suchi is hacker");
+       setTimeout(() =>{
+          console.log("I am time out")   
+    },2000);
+    console.log("The end")
+    </script>
+</body>
+</html>
